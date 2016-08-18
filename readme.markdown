@@ -1,6 +1,10 @@
-# resolve
+# resolve - Fluid Community Edition
 
-implements the [node `require.resolve()`
+This was forked from version 1.1.7 of substack's [node-resolve](https://github.com/substack/node-resolve) in
+order to incorporate a fix for [issue #106](https://github.com/substack/node-resolve/issues/106) and some test
+cases.
+
+Implements the [node `require.resolve()`
 algorithm](http://nodejs.org/docs/v0.4.8/api/all.html#all_Together...)
 such that you can `require.resolve()` on behalf of a file asynchronously and
 synchronously

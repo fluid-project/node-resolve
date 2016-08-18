@@ -9,13 +9,13 @@ test('async foo', function (t) {
     resolve('./foo', { basedir : dir }, function (err, res, pkg) {
         if (err) t.fail(err);
         t.equalPaths(res, dir + '/foo.js');
-        t.equal(pkg.name, 'resolve');
+        t.equal(pkg.name, 'fluid-resolve');
     });
     
     resolve('./foo.js', { basedir : dir }, function (err, res, pkg) {
         if (err) t.fail(err);
         t.equalPaths(res, dir + '/foo.js');
-        t.equal(pkg.name, 'resolve');
+        t.equal(pkg.name, 'fluid-resolve');
     });
     
     resolve('./foo', { basedir : dir, package: { main: 'resolver' } }, function (err, res, pkg) {
